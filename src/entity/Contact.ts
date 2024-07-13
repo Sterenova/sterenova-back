@@ -3,19 +3,19 @@ import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 @Entity()
 class Contact {
     @PrimaryGeneratedColumn()
-    id: number;
+    id!: string;
 
     @Column()
-    name: string;
+    name!: string;
 
     @Column()
-    email: string;
+    email!: string;
 
     @Column()
-    subject: string;
+    subject!: string;
 
     @Column()
-    message: string;
+    message!: string;
 }
 
 export default Contact;
