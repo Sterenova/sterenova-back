@@ -19,7 +19,7 @@ AppDataSource.initialize()
 
 app.use(bodyParser.json());
 
-app.use('/api', contactRoutes);
+app.use('/', contactRoutes);
 
 const PORT = process.env.PORT || 3000;
 

@@ -5,14 +5,14 @@ import Contact from "./entity/Contact";
 dotenv.config();
 
 const AppDataSource = new DataSource({
-    type: "postgres",
-    host: process.env.DB_HOST,
-    port: Number(process.env.DB_PORT),
-    username: process.env.DB_USER,
-    password: process.env.DB_PASS,
-    database: process.env.DB_NAME,
+    type: "mysql",
+    host: dotenv.MYSQL_HOST || 'localhost',
+    port: dotenv.MYSQL_PORT || 3307,
+    username: dotenv.MYSQL_USER,
+    password: dotenv.MYSQL_PASSWORD,
+    database: dotenv.MYSQL_DATABASE,
     entities: [Contact],
-    synchronize: true
+    synchronize: true,
 });
 
 export default AppDataSource;
