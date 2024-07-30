@@ -19,6 +19,10 @@ AppDataSource.initialize()
 
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => {
+  res.send('Hello World!');
+});
+
 app.use('/', contactRoutes);
 
 const PORT = process.env.PORT || 3000;
