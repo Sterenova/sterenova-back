@@ -5,7 +5,11 @@ import dotenv from 'dotenv';
 import AppDataSource from './database';
 import contactRoutes from './routes/contact';
 
-dotenv.config();
+if (process.env.NODE_ENV !== 'production') {
+  dotenv.config();
+} else {
+  dotenv.config({ path: '.env.production' });
+}
 
 const app = express();
 
