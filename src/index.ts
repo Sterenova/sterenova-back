@@ -3,7 +3,7 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import AppDataSource from './database';
-import contactRoutes from './routes/contact';
+import contactRoutes from './routes/Contact';
 
 if (process.env.NODE_ENV !== 'production') {
   dotenv.config();
