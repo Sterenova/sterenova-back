@@ -1,0 +1,101 @@
+[
+    {
+        "id": "1",
+        "name": "Caisson Alto",
+        "image": [
+            "img/sterenova/equipment/son/caisson_alto/img1",
+            "img/sterenova/equipment/son/caisson_alto/img2",
+            "img/sterenova/equipment/son/caisson_alto/img3"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Tete Alto 8 pouces",
+        "image": [
+            "img/sterenova/equipment/son/tete_8p/img1",
+            "img/sterenova/equipment/son/tete_8p/img2",
+            "img/sterenova/equipment/son/tete_8p/img3"
+        ]
+    },
+    {
+        "id": "3",
+        "name": "Laser",
+        "image": [
+            "img/sterenova/equipment/laser/img1",
+            "img/sterenova/equipment/laser/img2",
+            "img/sterenova/equipment/laser/img3"
+        ]
+    },
+    {
+        "id": "4",
+        "name": "Machine a fumée 1200",
+        "image": [
+            "img/sterenova/equipment/smoke/1200/img1",
+            "img/sterenova/equipment/smoke/1200/img2",
+            "img/sterenova/equipment/smoke/1200/img3"
+        ]
+    },
+    {
+        "id": "5",
+        "name": "Machine a fumée 1500",
+        "image": [
+            "img/sterenova/equipment/smoke/1500/img1",
+            "img/sterenova/equipment/smoke/1500/img2",
+            "img/sterenova/equipment/smoke/1500/img3"
+        ]
+    },
+    {
+        "id": "6",
+        "name": "Machine a fumée 3000",
+        "image": [
+            "img/sterenova/equipment/smoke/3000/img1",
+            "img/sterenova/equipment/smoke/3000/img2",
+            "img/sterenova/equipment/smoke/3000/img3"
+        ]
+    },
+    {
+        "id": "7",
+        "name": "JBL",
+        "image": [
+            "img/sterenova/equipment/son/jbl/img1",
+            "img/sterenova/equipment/son/jbl/img2",
+            "img/sterenova/equipment/son/jbl/img3"
+        ]
+    },
+    {
+        "id": "8",
+        "name": "strobo",
+        "image": [
+            "img/sterenova/equipment/strob/img1",
+            "img/sterenova/equipment/strob/img2",
+            "img/sterenova/equipment/strob/img3"
+        ]
+    },
+    {
+        "id": "9",
+        "name": "Lyre Blanches",
+        "image": [
+            "img/sterenova/equipment/lyre_blanche/img1",
+            "img/sterenova/equipment/lyre_blanche/img2",
+            "img/sterenova/equipment/lyre_blanche/img3"
+        ]
+    },
+    {
+        "id": "10",
+        "name": "par LED",
+        "image": [
+            "img/sterenova/equipment/par_led/petit/img1",
+            "img/sterenova/equipment/par_led/petit/img2",
+            "img/sterenova/equipment/par_led/petit/img3"
+        ]
+    },
+    {
+        "id": "11",
+        "name": "Gros par LED",
+        "image": [
+            "img/sterenova/equipment/par_led/grand/img1",
+            "img/sterenova/equipment/par_led/grand/img2",
+            "img/sterenova/equipment/par_led/grand/img3"
+        ]
+    }
+]
