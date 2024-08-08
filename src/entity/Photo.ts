@@ -11,6 +11,11 @@ class Photo {
 
     @ManyToOne(() => Equipment, (equipment) => equipment.photos)
     equipment: Equipment | undefined;
+
+    constructor(url: string, equipment: Equipment) {
+        this.url = url;
+        this.equipment = equipment;
+    }
 }
 
 export default Photo;
