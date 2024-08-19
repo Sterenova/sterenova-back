@@ -5,6 +5,7 @@ import dotenv from 'dotenv';
 import AppDataSource from './database';
 import contactRoutes from './routes/Contact';
 import equipmentRoutes from './routes/Equipment';
+import packRoutes from './routes/Pack';
 
 if (process.env.NODE_ENV !== 'production') {
   dotenv.config();
@@ -31,6 +32,7 @@ app.get("/", (req, res) => {
 
 app.use("/", contactRoutes);
 app.use("/", equipmentRoutes);
+app.use("/", packRoutes);
 
 const PORT = process.env.PORT || 3000;
 

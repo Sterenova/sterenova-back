@@ -1,6 +1,4 @@
 import { Router } from "express";
-import path from "path";
-import fs from "fs/promises";
 import AppDataSource from "../database";
 import Equipment from "../entity/Equipment";
 import Photo from "../entity/Photo";
