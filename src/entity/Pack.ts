@@ -1,4 +1,5 @@
-import { Column, Entity, PrimaryGeneratedColumn } from "typeorm";
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from "typeorm";
+import Equipment from "./Equipment";
 
 @Entity()
 class Pack {
@@ -25,6 +26,9 @@ class Pack {
 
     @Column()
     lightPrice: number;
+
+    @OneToMany(() => Equipment, (equipment) => equipment)
+    equipments: Equipment[] | undefined;
 
     constructor(name: string, globalPrice: number, description: string, soundDescription: string, soundPrice: number, lightDescription: string, lightPrice: number) {
         this.name = name;
