@@ -15,6 +15,24 @@ router.get("/equipment", async (req, res) => {
     }
 });
 
+router.get("/equipment/:id", async (req, res) => {
+    const id = req.params.id;
+
+    try {
+        const equipmentRepository = AppDataSource.getRepository(Equipment);
+        const equipment = await equipmentRepository.findOne({ where: { id: Number(id) }, relations: ["photos"] });
+
+        if (!equipment) {
+            res.status(404).json({error: "Equipment not found."});
+            return;
+        }
+
+        res.json(equipment);
+    } catch (error) {
+        res.status(500).json({error: "An error occurred while fetching equipment."});
+    }
+});
+
 router.post("/equipment", async (req, res) => {
     const { name, type, description, price, photos } = req.body;
 
